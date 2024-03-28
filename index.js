@@ -29,7 +29,7 @@ function updateStats(query) {
 
     document.querySelector(".right li:nth-of-type(1) > span").textContent = dataObject.current.cloud + "%";
     document.querySelector(".right li:nth-of-type(2) > span").textContent = `${dataObject.current.wind_dir} ${dataObject.current.wind_kph} km/h`;
-    document.querySelector(".right li:nth-of-type(3) > span").textContent = `${dataObject.current.gusts_kph} km/h`;
+    document.querySelector(".right li:nth-of-type(3) > span").textContent = `${dataObject.current.gust_kph} km/h`;
     document.querySelector(".right li:nth-of-type(4) > span").textContent = dataObject.current.humidity + "%";
   });
 }
