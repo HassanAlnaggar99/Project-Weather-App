@@ -23,8 +23,8 @@ function updateStats(query) {
     document.querySelector(".leadingP .value").textContent = time;
 
     document.querySelector(".block-a > img").src = "https:" + dataObject.current.condition.icon;
-    document.querySelector(".real_temp").textContent = dataObject.current.temp_c + " C";
-    document.querySelector(".feel_temp").textContent = dataObject.current.feelslike_c + " C";
+    document.querySelector(".real_temp").textContent = dataObject.current.temp_c + "° C";
+    document.querySelector(".feel_temp").textContent = `RealFeel ${dataObject.current.feelslike_c}° C`;
     document.querySelector(".weather_text").textContent = dataObject.current.condition.text;
 
     document.querySelector(".right li:nth-of-type(1) > span").textContent = dataObject.current.cloud + "%";
