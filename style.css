@@ -1,0 +1,107 @@
+:root {
+  font-size: 20px;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background: url("img/sky2.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  margin: 20px;
+  color: #8f7878;
+}
+form {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #FFEB3B;
+  padding: 10px;
+  border-radius: 10px;
+}
+form > button {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+}
+.box {
+  min-width: 700px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.leadingP {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.stats {
+  margin-top: 20px;
+  display: flex;
+  gap: 60px;
+}
+.block-a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.block-a > img {
+  height: 5rem;
+  width: auto;
+  vertical-align: middle;
+}
+.right {
+  min-width: 400px;
+}
+.real_temp {
+  font-size: 3rem;
+  font-weight: bold;
+}
+span.unit {
+  font-size: 1rem;
+  color: #ccc;
+}
+.weather_text {
+  font-weight: bold;
+}
+.right li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.right li:not(:last-of-type) {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+.value {
+  font-weight: bold;
+}

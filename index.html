@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1></h1>
+
+      <form>
+        <input type="text">
+        <button>Search</button>
+      </form>
+
+      <div class="box">
+        <p class="leadingP">
+          <span>current weather</span> <span class="value">7:30 AM</span>
+        </p><hr>
+        <div class="stats">
+          <div class="left">
+            <div class="block-a">
+              <img src="img/113.png" alt="weather icon">
+              <div class="temps">
+                <div class="real_temp">20°<span class="unit">C</span></div>
+                <div class="feel_temp">RealFeel 20°</div>
+              </div>
+            </div>
+            <span class="weather_text">Partly sunny</span>
+          </div>
+          <ul class="right">
+            <li>Clouds <span class="value">20%</span></li>
+            <li>Wind <span class="value">N 7 km/h</span></li>
+            <li>Wind Gusts <span class="value">9 km/h</span></li>
+            <li>Humidity <span class="value">20%</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!--
+
+temp_c | temp_f
+feelslike_c | feelslike_f
+condition:text
+condition:icon
+wind_mph | wind_kph
+wind_dir | wind_degree
+gust_mph | gust_kph
+pressure_mb | pressure_in
+humidity
+cloud
+is_day
+ -->
