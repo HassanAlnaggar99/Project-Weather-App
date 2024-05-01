@@ -19,7 +19,7 @@ function updateStats(query) {
     h1.textContent = dataObject.location.name;
 
     let now = new Date(dataObject.location.localtime);
-    let time = `${String(now.getHours()).padStart(2, 0)}:${String(now.getMinutes()).padStart(2, 0)} ${now.getHours() < 12 ? "AM" : "PM"}`;
+    let time = `${String(now.getHours() % 12).padStart(2, 0)}:${String(now.getMinutes()).padStart(2, 0)} ${now.getHours() < 12 ? "AM" : "PM"}`;
     document.querySelector(".leadingP .value").textContent = time;
 
     document.querySelector(".block-a > img").src = "https:" + dataObject.current.condition.icon;
